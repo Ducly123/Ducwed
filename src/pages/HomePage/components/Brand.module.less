@@ -1,0 +1,98 @@
+.root {
+  padding-bottom: 5rem;
+}
+
+.brandHeader {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+  position: relative;
+  width: 256px;
+  height: 50px;
+}
+
+.brandTitle {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+.brandDes {
+}
+
+.brandDes span {
+  display: block;
+  width: 480px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.brandHeader::before {
+  position: absolute;
+  content: '';
+  width: 95px;
+  border-bottom: 1px solid white;
+  transform: translateX(-85%);
+}
+
+.brandHeader::after {
+  position: absolute;
+  content: '';
+  width: 95px;
+  border-bottom: 1px solid white;
+  transform: translateX(85%);
+}
+
+.carousel {
+  height: 300px;
+}
+
+.carouselItem {
+  display: inline-flex !important;
+  justify-content: center;
+}
+
+.brandGrid {
+  padding: 5rem 10rem;
+}
+
+.brandGridCol {
+  column-gap: 50px;
+}
+
+.brandGridColContent {
+  width: 210px;
+  text-align: left;
+}
+
+.brandGridColContent div:first-child {
+  text-align: center;
+}
+
+.brandGridColContent div:first-child span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #108564;
+}
+
+.brandGridColContent div:nth-child(2) span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (max-width: 768px) {
+  .brandGrid {
+    padding: 5rem 5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brandGrid {
+    padding: 5rem 0;
+  }
+}
